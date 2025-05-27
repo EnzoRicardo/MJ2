@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="glass-bar">
-        <h1>Bubble Pop</h1>
-        <p>Pontuação: <span id="score">0</span></p>
-        <div id="gameOver" class="hidden">Game Over</div>
+    <div id="gameArea">
+        <div id="scoreBoard">Pontuação: <span id="score">0</span></div>
+        <div class="bubble" id="player"></div>
         <button id="restartBtn" class="hidden">Recomeçar</button>
     </div>
-
-    <div id="gameArea"></div>
 
     <script src="script.js"></script>
 </body>
