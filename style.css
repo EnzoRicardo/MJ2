@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url("/MJ2/MJ2/Underwater 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.glass-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#gameArea {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  border: 2px solid #000000;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.bubble {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  animation: rise 5s linear;
+}
+
+@keyframes rise {
+  0% { bottom: 0; }
+  100% { bottom: 100%; }
+}
+
+.hidden {
+  display: none;
+}
+
+#gameOver {
+  font-size: 2em;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+
+#restartBtn {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease-in;
+}
+
+#restartBtn:hover {
+  background-color: #005f87;
+  transform: scale(1.1);
+}
